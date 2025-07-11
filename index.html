@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/logo.png" alt="Logo-Esports">
+    </header>
+    
+    <main>
+        <section>
+            <div>
+                <h2>Meta Assistant</h2>
+                <p>Ask for strategy, builds or tips! </p>
+                <form id="form">
+                    <input id="apiKey" type="password" placeholder="Gemini API KEY Input" required>
+                    <select name="" id="gameSelect">
+                        <option value="">Select Role</option>
+                        <option value="Carry">Carry</option>
+                        <option value="Midlaner">Midlaner</option>
+                        <option value="Offlaner">Offlaner</option>
+                        <option value="Hard-Support">Hard Support</option>
+                        <option value="Soft-Support">Soft Support</option>
+                    </select>
+
+                    <input id="questionInput" type="text" placeholder="Strategy, build, tips for [hero/role]" required>
+
+                    <button id="askButton">
+                        Ask AI
+                    </button>
+                </form>
+
+                <div id="AIResponse" class="hidden">
+                    <div class="response-content">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
